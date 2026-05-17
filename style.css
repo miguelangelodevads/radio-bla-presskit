@@ -1,0 +1,36 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+body {
+  @apply bg-background text-on-surface font-body-md antialiased;
+  overflow-x: hidden;
+}
+@media (min-width: 1024px) {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-canvas {
+    flex: 1;
+    overflow: hidden;
+  }
+}
+.bento-card {
+  @apply bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden;
+}
+
+/* Barra de rolagem customizada e elegante */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-outline-variant rounded-full;
+}
