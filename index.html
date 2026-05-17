@@ -45,12 +45,15 @@
   <body class="bg-background">
     <!-- TopAppBar -->
     <header
-      class="print:hidden bg-background text-on-surface border-b border-outline-variant flex justify-between items-center w-full px-gutter py-4 max-w-7xl mx-auto"
+      class="bg-background text-on-surface border-b border-outline-variant flex flex-col md:flex-row justify-between items-center w-full px-gutter py-4 max-w-7xl mx-auto gap-4 md:gap-0"
     >
-      <div class="text-label-sm font-label-sm tracking-[0.2em] text-on-surface">
+      <div
+        class="text-label-sm font-label-sm tracking-[0.2em] text-on-surface text-center md:text-left"
+      >
         PRESS KIT / 2026
       </div>
-      <div class="hidden md:flex gap-6 items-center">
+
+      <div class="flex flex-col sm:flex-row gap-4 md:gap-6 items-center">
         <span
           class="flex items-center gap-2 text-label-sm font-label-sm text-primary font-bold"
         >
@@ -61,15 +64,6 @@
           >
           FORTALEZA · CEARÁ · BRASIL
         </span>
-        <button
-          onclick="window.print()"
-          class="print:hidden bg-primary text-on-primary px-4 py-2 rounded-full text-label-sm font-bold hover:opacity-80 transition-opacity flex items-center gap-2"
-        >
-          <span class="material-symbols-outlined text-[16px]">
-            picture_as_pdf
-          </span>
-          BAIXAR PDF
-        </button>
       </div>
     </header>
     <!-- Main Content Canvas -->
@@ -335,6 +329,21 @@
                 >
               </a>
             </div>
+          </div>
+
+          <div class="flex justify-center w-full mt-2 mb-0">
+            <a
+              href="press_kit_radio_bla_dark_theme.pdf"
+              download="PressKit_RadioBla_2026.pdf"
+              class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm font-bold tracking-widest uppercase"
+            >
+              <span
+                class="material-symbols-outlined text-[18px]"
+                data-icon="download"
+                >download</span
+              >
+              Baixar PDF
+            </a>
           </div>
         </div>
       </div>
