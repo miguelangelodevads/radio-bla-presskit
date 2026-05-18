@@ -126,6 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "assets/DSC00135-150.jpg",
     "assets/DSC00151-160.jpg",
     "assets/DSC00197-187.jpg",
+    "assets/DSC09969-69.jpg",
     "assets/DSC00212-190.jpg",
     "assets/DSC00227-202.jpg",
     "assets/DSC09875-4.jpg",

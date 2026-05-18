@@ -35,9 +35,12 @@
         }
         html,
         body {
-          height: 100%;
+          height: auto !important;
+          display: block !important;
+          overflow: visible !important;
           margin: 0 !important;
           padding: 0 !important;
+          background-color: #131313 !important;
         }
       }
     </style>
@@ -370,7 +373,7 @@
     <div class="hidden print:block w-full text-primary font-body-md">
       <!-- PÁGINA 1: Integrantes -->
       <div
-        class="relative h-[100vh] w-full flex flex-col justify-center items-center break-after-page p-8 overflow-hidden"
+        class="relative h-[297mm] w-full flex flex-col justify-center items-center break-after-page p-8 overflow-hidden"
       >
         <img
           src="assets/DSC00197-187.jpg"
@@ -474,7 +477,7 @@
 
       <!-- PÁGINA 2: Release -->
       <div
-        class="relative h-[100vh] w-full flex flex-col justify-center items-center break-after-page p-16"
+        class="relative h-[297mm] w-full flex flex-col justify-center items-center break-after-page p-16 overflow-hidden"
       >
         <img
           src="assets/DSC00135-150.jpg"
@@ -523,7 +526,7 @@
 
       <!-- PÁGINA 3: Footer/Contato -->
       <div
-        class="relative h-[100vh] w-full flex flex-col justify-center items-center p-12"
+        class="relative h-[297mm] w-full flex flex-col justify-center items-center p-12 overflow-hidden"
       >
         <img
           src="assets/DSC00227-202.jpg"
